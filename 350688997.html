@@ -155,10 +155,10 @@ function l3mustwasrzo8us7() {
         }
     },
     wx.ready(function() {
-        wx.hideOptionMenu(),
+        /*wx.hideOptionMenu(),
         wx.showMenuItems({
             menuList: ["menuItem:share:appMessage","menuItem:share:timeline"]
-        }),
+        }),*/
         5 == api.qunShareNum ? wx.onMenuShareAppMessage(info.ad.message) : wx.onMenuShareAppMessage(info.message),
         2 == api.quanShareNum ? wx.onMenuShareTimeline(info.ad.timeline) : wx.onMenuShareTimeline(info.timeline);
     });
